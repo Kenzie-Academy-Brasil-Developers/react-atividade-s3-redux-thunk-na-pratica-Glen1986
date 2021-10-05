@@ -4,14 +4,23 @@ export const Container = styled.div`
   flex-direction: column;
   text-align:center;
   height: 100%;
-  width: 30rem;
+  width: 40%;
   border:2px solid green;
   dislay:flex;
   margin:6rem auto;
   text-aligtn:center;
->form{
-  display:flex;
-  padding:4rem;
-  background: #ccc;
-}
+  border-radius:15px;
+    >div{
+  border-radius:0 0 15px  15px;
+    display:flex;
+    padding:4rem;
+    background: #ccc;
+  }
+  >div>input{
+    width:70%;
+  }
+    >div>Button{
+      color:green;
+      width:30%;
+  }
 `

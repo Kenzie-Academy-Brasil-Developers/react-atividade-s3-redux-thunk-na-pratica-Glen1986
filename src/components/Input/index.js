@@ -1,7 +1,10 @@
-const Input = () => {
+const Input = ({value, placeholder, ...rest}) => {
   return (
     <>
-      <input type="" />
+      <input
+        value={value}
+        placeholder={placeholder}
+        {...rest} />
     </>
   )
 }
