@@ -6,11 +6,13 @@ const Card = () => {
   return (
     <Container>
       <Display />
-      <form >
-        <Input />
+      <div>
+        <Input
+          placeholder={"Name"}
+        />
         <Button
           children={"NewComment"} />
-      </form>
+      </div>
     </Container>
   )
 }

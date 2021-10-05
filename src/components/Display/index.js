@@ -1,7 +1,10 @@
+import {useSelector} from 'react-redux';
+
 const Display = () => {
+  const result = useSelector((store)=>store.user)
   return (
     <>
-      Display
+      {result.name}
 
     </>
   )
