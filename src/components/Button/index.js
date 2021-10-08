@@ -1,10 +1,7 @@
-import {useDispatch} from "react-redux";
-import {addCommentThunk} from "../../store/modules/user/thunks";
-const Button = ({children}) => {
-  const dispatch = useDispatch();
+const Button = ({children, comment, onClick}) => {
   return (
     <>
-      <button onClick={() => dispatch(addCommentThunk("primer comentário"))}>{children}</button>
+      <button onClick={() => onClick(comment)}>{children}</button>
 
     </>
   )

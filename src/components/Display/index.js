@@ -1,10 +1,16 @@
 import {useSelector} from 'react-redux';
 
 const Display = () => {
-  const result = useSelector((store)=>store.user)
+  const result = useSelector((store) => store.user)
+
   return (
     <>
-      {result.name}
+      <section>{result.name}</section>
+      <section>{result.comments.map((item) => (
+        <tr>
+          <td>{item}</td>
+        </tr>
+      ))}</section>
 
     </>
   )
