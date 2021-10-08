@@ -10,6 +10,19 @@ export const Container = styled.div`
   margin:6rem auto;
   text-aligtn:center;
   border-radius:15px;
+section{
+  align-self:center;
+}
+section>tr>td{
+  width:20rem;
+  height:2rem;
+  align-items:center;
+  background-color:grey;
+  color:white;
+  display:content;
+  border:2px solid blue;
+  border-radius:5px;
+}
     >div{
   border-radius:0 0 15px  15px;
     display:flex;
